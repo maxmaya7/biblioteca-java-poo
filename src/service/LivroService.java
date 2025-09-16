@@ -22,6 +22,7 @@ public class LivroService {
                         .anyMatch(l -> l.getId() == idLivro);
         if (idCadastrado){
             System.out.println("Já existe um livro com esse ID!\n");
+            return;
         }
 
         sc.nextLine();
